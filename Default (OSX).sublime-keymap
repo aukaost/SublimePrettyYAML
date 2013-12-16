@@ -1,0 +1,8 @@
+[
+    {
+        "keys": [
+            "super+ctrl+y"
+        ], 
+        "command": "prettyyaml"
+    }
+]

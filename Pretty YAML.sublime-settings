@@ -1,0 +1,17 @@
+{
+    "use_entire_file_if_no_selection" : true,
+    "dumper_args": {
+    	"default_style": null, 
+    	"default_flow_style": null,
+    	"canonical": null, 
+    	"indent": null, 
+    	"width": null,
+		"allow_unicode": null, 
+		"line_break": null,
+		"encoding": null, 
+		"explicit_start": null, 
+		"explicit_end": null,
+		"version": null, 
+		"tags": null
+    }
+}
