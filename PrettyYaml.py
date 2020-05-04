@@ -12,12 +12,13 @@ class PrettyyamlCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
         """ Pretty print YAML """
-        for region in self.view.sel():
+        regions = self.view.sel()
+        for region in regions:
 
             selected_entire_file = False
-
-            # If no selection, use the entire file as the selection
-            if region.empty() and s.get("use_entire_file_if_no_selection", True):
+            if region.empty() and len(regions) > 1:
+                continue
+            elif region.empty() and s.get("use_entire_file_if_no_selection", True):
                 selection = sublime.Region(0, self.view.size())
                 selected_entire_file = True
             else:
